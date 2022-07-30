@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Outlet } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import { Navigate ,NavLink} from "react-router-dom";
+import UiLibrary from './components/UiLibrary/UiLibrary';
 
 class Other extends PureComponent { 
   constructor(props) {
@@ -44,10 +45,15 @@ class Other extends PureComponent {
         <button onClick={()=>{
           this.token()
         }}>
-        token
+        remove token
         </button>
         <div>
+        <NavLink  to="/Base/Home"> home</NavLink>
+        <NavLink  to="/Base/about"> about</NavLink>
+        </div>
+        <div>
           <Outlet />
+          <UiLibrary />
         </div>
       </div>
     );

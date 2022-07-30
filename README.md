@@ -19,6 +19,10 @@ npm i sass --save-dev
 # i18n
 npm i i18next react-i18next i18next-http-backend i18next-browser-languagedetector --save 
 -------------------------------------------
+# CSS Modules
+style.Module.css 
+className={style.class}
+-------------------------------------------
 -------------------------------------------
 # ui 
 ----
